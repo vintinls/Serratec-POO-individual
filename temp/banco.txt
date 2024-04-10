@@ -1,0 +1,10 @@
+Usuario;1;Celio Amaral;123.456.789-12;(24)988123456;celio@gmail.com;masculino;1;
+Usuario;2;Amelia Azevedo;234.567.891-23;(24)988654321;amelia@gmail.com;feminino;2;
+Usuario;3;Arthur Oliveira;345.678.912-34;(24)988234567;arthur@gmail.com;masculino;3;
+Usuario;4;Ana Justen;456.789.123-45;(24)98834678;ana@gmail.com;feminino;4;
+Usuario;5;Lucas Washiton;567.891.234-56;(24)988456789;lucas@gmail.com;masculino;5;
+Endereco;1;RJ;Petrópolis;Mosela;Rua Marechal Deodoro;A;
+Endereco;2;RJ;Petrópolis;Quarteirão Brasileiro;Rua Atilio Marotti;B;
+Endereco;3;RJ;Petrópolis;Quitandinha;Rua Rio de Janeiro;C;
+Endereco;4;RJ;Petrópolis;Correas;Rua Santos;D;
+Endereco;5;RJ;Petrópolis;Cascatinha;Rua Roberto Marinho;E;
