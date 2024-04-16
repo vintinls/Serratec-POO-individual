@@ -92,6 +92,7 @@ public class Usuario {
 		this.fkEnd = fkEnd;
 	}
 
+	
 	public static Map<Integer, Usuario> getMapaUsuarios() {
 		return mapaUsuarios;
 	}
