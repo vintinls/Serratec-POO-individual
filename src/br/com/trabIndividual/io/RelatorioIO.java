@@ -73,13 +73,13 @@ public class RelatorioIO {
 
 		if (!nomesUsuarios.isEmpty()) {
 
-			buffWrite.append("Nome dos Usuarios: ");
+			buffWrite.append("Nome dos Usuarios: \n\n");
 
 			for (String nomeUsuario : nomesUsuarios) {
-				buffWrite.append(nomeUsuario + "\n");
+				buffWrite.append("\n" + nomeUsuario + "\n");
 			}
 
-			buffWrite.append("---------FIM DA LISTA NOMES USUARIOS --------/n");
+			buffWrite.append("\n---------FIM DA LISTA NOMES USUARIOS --------/n");
 			buffWrite.close();
 		}
 	}
@@ -112,7 +112,7 @@ public class RelatorioIO {
 		if (!endereco.isEmpty()) {
 
 			for (Endereco endereco1 : endereco) {
-				buffWrite.append("Estado: " + endereco1.getEstado() + "\nCidade: " + endereco1.getCidade());
+				buffWrite.append("\n\nId: " + endereco1.getId() + "\nEstado: " + endereco1.getEstado() + "\nCidade: " + endereco1.getCidade());
 			}
 		}
 		buffWrite.append("\n\n---------FIM DA LISTA DE ENDERECOS--------\n\n");
