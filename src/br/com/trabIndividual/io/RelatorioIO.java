@@ -133,45 +133,23 @@ public class RelatorioIO {
 		logger.log(Level.INFO, () -> "\n\n---------FIM DA LISTA DE ENDERECOS--------\n\n");
 	}
 
-	/*
-	 * relatorio que busca mostrar os enderecos public static void
-	 * relatorioListarEnderecos(List<Endereco> enderecos) throws IOException {
-	 * 
-	 * String nome = "lista-enderecos";
-	 * 
-	 * BufferedWriter buffWrite = new BufferedWriter(new FileWriter(PATH_BASICO +
-	 * nome + EXTENSAO, true));
-	 * 
-	 * // append insere algo na tela dentro do relatorio
-	 * buffWrite.append("-------RELATÓRIO: LISTA DE ENDERECOS ------\n\n");
-	 * 
-	 * // verifica se alista chamada nao esta vazia if (!enderecos.isEmpty()) {
-	 * 
-	 * // append insere algo na tela dentro do relatorio
-	 * buffWrite.append("Enderecos: ");
-	 * 
-	 * // foreach para percorrer a lista dos nomes dos usuarios de um em um for
-	 * (Endereco endereco : enderecos) { buffWrite.append("Estado: " +
-	 * endereco.getEstado() + "\n" + "Cidade: " + endereco.getCidade() + "\n" +
-	 * "Rua: " + endereco.getRua()); }
-	 * 
-	 * buffWrite.append("---------FIM DA LISTA NOMES DE ENDERECOS --------/n");
-	 * buffWrite.close(); } }
-	 * 
-	 * 
-	 * 
-	 * // escritor que mostra todas as informações juntas
-	 * 
-	 * /* public static void escritor(String path) throws IOException {
-	 * 
-	 * Util.customizer(); logger.log(Level.INFO, () ->
-	 * "Escreva o nome do arquivo: "); String nome = lerLinha();
-	 * 
-	 * BufferedWriter buffWrite = new BufferedWriter(new FileWriter(PATH_BASICO +
-	 * nome + EXTENSAO, true)); String linha = "";
-	 * 
-	 * Util.customizer(); logger.log(Level.INFO, () -> "Escreva algo: "); linha =
-	 * lerLinha(); buffWrite.append(linha + "\n"); buffWrite.close();
-	 * fecharScanner();
-	 */
+	// escritor
+
+	public static void escritor(String path) throws IOException {
+
+		Util.customizer();
+		logger.log(Level.INFO, () -> "Escreva o nome do arquivo: ");
+		String nome = lerLinha();
+
+		BufferedWriter buffWrite = new BufferedWriter(new FileWriter(PATH_BASICO + nome + EXTENSAO, true));
+		String linha = "";
+
+		Util.customizer();
+		logger.log(Level.INFO, () -> "Escreva algo: ");
+		linha = lerLinha();
+		buffWrite.append(linha + "\n");
+		buffWrite.close();
+		fecharScanner();
+
+	}
 }
