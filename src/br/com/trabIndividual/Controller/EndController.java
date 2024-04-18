@@ -21,8 +21,13 @@ public class EndController {
 	}
 
 	public void listarEnderecosConsole() throws IOException {
-		List<Endereco> endereco = endService.listarEnderecosConsole();
+		List<Endereco> enderecos = endService.listarEnderecosConsole();
+		for (Endereco endereco : enderecos) {
+			Util.customizer();
+			logger.log(Level.INFO, () -> endereco.getEstado() + ", " + endereco.getCidade() + ", "
+					+ endereco.getBairro() + ", " + endereco.getRua() + ", " + endereco.getComplemento() + "\n");
+		}
 		Util.customizer();
-		logger.log(Level.INFO, () -> endereco + "\n\nLista gerada com sucesso!");
+		logger.log(Level.INFO, () -> "\n\nLista gerada com sucesso!");
 	}
 }

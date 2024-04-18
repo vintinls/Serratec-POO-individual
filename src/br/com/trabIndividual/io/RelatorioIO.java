@@ -113,8 +113,8 @@ public class RelatorioIO {
 
 			for (Endereco endereco1 : endereco) {
 				buffWrite.append("\n\nId: " + endereco1.getId() + "\nEstado: " + endereco1.getEstado() + "\nCidade: "
-						+ endereco1.getCidade() + "\nBairro: " + endereco1.getBairro() + "Rua: " + endereco1.getRua()
-						+ "Complemento: " + endereco1.getComplemento());
+						+ endereco1.getCidade() + "\nBairro: " + endereco1.getBairro() + "\nRua: " + endereco1.getRua()
+						+ "\nComplemento: " + endereco1.getComplemento());
 			}
 		}
 		buffWrite.append("\n\n---------FIM DA LISTA DE ENDERECOS--------\n\n");
@@ -133,7 +133,7 @@ public class RelatorioIO {
 		logger.log(Level.INFO, () -> "\n\n---------FIM DA LISTA DE ENDERECOS--------\n\n");
 	}
 
-	// escritor
+	/* escritor
 
 	public static void escritor(String path) throws IOException {
 
@@ -151,5 +151,5 @@ public class RelatorioIO {
 		buffWrite.close();
 		fecharScanner();
 
-	}
+	}*/
 }

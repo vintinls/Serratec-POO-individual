@@ -25,7 +25,6 @@ public class UsuController {
 	}
 
 	public void listarNomesUsuariosConsole() throws IOException {
-
 		List<String> usuarios = usuService.listarUsuariosConsole();
 		Util.customizer();
 		logger.log(Level.INFO, () -> usuarios + "\n\nLista gerada com sucesso!");
