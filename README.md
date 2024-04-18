@@ -14,8 +14,14 @@
 
 Contexto: Trabalho individual da Matéria POO.
 
+As entidades utilizadas para fazer o trabalho foram Usuario e endereço.
+As funcionalidades foram:
 
+--->Listar nome completo dos usuarios
 
+--->Listar os endereços dos usuarios
+
+As duas opções fornecidas estao disponibilizadas tanto para criação do relatório impresso, tanto para a impressão no console(tela).
 
 
 
