@@ -19,11 +19,11 @@ public class UsuController {
 
 	public void listarNomesUsuarios() throws IOException {
 
-		List<String> usuarios = usuService.listarUsuarios();
+		usuService.listarUsuarios();
 		Util.customizer();
-		logger.log(Level.INFO, () -> usuarios + "\n\nLista gerada com sucesso!");
+		logger.log(Level.INFO, "\n\nLista gerada com sucesso!");
 	}
-	
+
 	public void listarNomesUsuariosConsole() throws IOException {
 
 		List<String> usuarios = usuService.listarUsuariosConsole();
