@@ -133,23 +133,21 @@ public class RelatorioIO {
 		logger.log(Level.INFO, () -> "\n\n---------FIM DA LISTA DE ENDERECOS--------\n\n");
 	}
 
-	/* escritor
-
-	public static void escritor(String path) throws IOException {
-
-		Util.customizer();
-		logger.log(Level.INFO, () -> "Escreva o nome do arquivo: ");
-		String nome = lerLinha();
-
-		BufferedWriter buffWrite = new BufferedWriter(new FileWriter(PATH_BASICO + nome + EXTENSAO, true));
-		String linha = "";
-
-		Util.customizer();
-		logger.log(Level.INFO, () -> "Escreva algo: ");
-		linha = lerLinha();
-		buffWrite.append(linha + "\n");
-		buffWrite.close();
-		fecharScanner();
-
-	}*/
+	/*
+	 * escritor
+	 * 
+	 * public static void escritor(String path) throws IOException {
+	 * 
+	 * Util.customizer(); logger.log(Level.INFO, () ->
+	 * "Escreva o nome do arquivo: "); String nome = lerLinha();
+	 * 
+	 * BufferedWriter buffWrite = new BufferedWriter(new FileWriter(PATH_BASICO +
+	 * nome + EXTENSAO, true)); String linha = "";
+	 * 
+	 * Util.customizer(); logger.log(Level.INFO, () -> "Escreva algo: "); linha =
+	 * lerLinha(); buffWrite.append(linha + "\n"); buffWrite.close();
+	 * fecharScanner();
+	 * 
+	 * }
+	 */
 }

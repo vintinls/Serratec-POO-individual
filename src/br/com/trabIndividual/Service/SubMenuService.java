@@ -60,8 +60,7 @@ public class SubMenuService {
 	public static void subMenuConsole() throws IOException, InterruptedException {
 		UsuController usuController = new UsuController();
 		EndController endController = new EndController();
-		
-		
+
 		Util.customizer();
 		logger.log(Level.INFO, """
 				Menu interativo:

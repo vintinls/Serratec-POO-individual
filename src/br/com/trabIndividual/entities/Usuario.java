@@ -15,7 +15,7 @@ public class Usuario {
 	private Integer fkEnd;
 
 	static Map<Integer, Usuario> mapaUsuarios = new HashMap<>();
-	
+
 	// construtor default
 	public Usuario() {
 		super();// herança
@@ -92,7 +92,6 @@ public class Usuario {
 		this.fkEnd = fkEnd;
 	}
 
-	
 	public static Map<Integer, Usuario> getMapaUsuarios() {
 		return mapaUsuarios;
 	}
