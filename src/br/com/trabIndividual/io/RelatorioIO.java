@@ -112,7 +112,9 @@ public class RelatorioIO {
 		if (!endereco.isEmpty()) {
 
 			for (Endereco endereco1 : endereco) {
-				buffWrite.append("\n\nId: " + endereco1.getId() + "\nEstado: " + endereco1.getEstado() + "\nCidade: " + endereco1.getCidade());
+				buffWrite.append("\n\nId: " + endereco1.getId() + "\nEstado: " + endereco1.getEstado() + "\nCidade: "
+						+ endereco1.getCidade() + "\nBairro: " + endereco1.getBairro() + "Rua: " + endereco1.getRua()
+						+ "Complemento: " + endereco1.getComplemento());
 			}
 		}
 		buffWrite.append("\n\n---------FIM DA LISTA DE ENDERECOS--------\n\n");
