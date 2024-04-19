@@ -9,13 +9,13 @@ import br.com.trabIndividual.io.RelatorioIO;
 
 public class EndService {
 
-	public List<Endereco> listarEnderecos() throws IOException {
+	public void listarEnderecos() throws IOException {
 		List<Endereco> listaEnderecos = new ArrayList<>();
 		for (Endereco endereco : Endereco.getMapaEnderecos().values()) {
 			listaEnderecos.add(endereco);
 		}
 		RelatorioIO.relatorioListaEndereco(listaEnderecos);
-		return listaEnderecos;
+		return;
 	}
 
 	public List<Endereco> listarEnderecosConsole() throws IOException {

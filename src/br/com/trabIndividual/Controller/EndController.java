@@ -15,9 +15,9 @@ public class EndController {
 	static Logger logger = Util.setupLogger();
 
 	public void listarEnderecos() throws IOException {
-		List<Endereco> endereco = endService.listarEnderecos();
+		endService.listarEnderecos();
 		Util.customizer();
-		logger.log(Level.INFO, () -> endereco + "\n\nLista gerada com sucesso!");
+		logger.log(Level.INFO, () -> "\n\nLista gerada com sucesso!");
 	}
 
 	public void listarEnderecosConsole() throws IOException {
